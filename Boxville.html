@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Boxville - Get the Game Now!</title>
+  <style>
+    /* Sparkling Animation for the Image */
+    @keyframes shine {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+
+    /* Apply Sparkling Animation to the Image on Hover */
+    .shine-image:hover {
+      animation: shine 1s infinite;
+      filter: brightness(1.2) drop-shadow(0 0 10px rgba(0, 0, 255, 0.5));
+    }
+
+    /* Customize Text Styling */
+    .promotional-text {
+      font-size: 24px;
+      color: #F9A825; /* Change to a gold color (#F9A825) */
+      font-weight: bold; /* Bold font */
+      animation: bounce 2s infinite; /* Cute animation */
+      margin-top: 70px; /* Adjust the margin-top value to raise the text */
+    }
+
+    /* Bounce Animation for Text */
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-5px); }
+    }
+
+    /* Styling for Arrow */
+    .arrow {
+      display: block;
+      width: 0;
+      height: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-top: 20px solid #F9A825; /* Gold color (#F9A825) */
+      margin: 10px auto; /* Adjust the margin for center alignment */
+    }
+
+    /* Styling for the blue can image */
+    .can-container {
+      text-align: center;
+    }
+
+    /* Styling for the whole ad container */
+    .ad-container {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <!-- Image Ad in the Center -->
+  <div class="ad-container">
+    <img src="https://img1.wsimg.com/isteam/ip/93004714-b337-4d50-9741-936ac4910de8/PS4-takethree.png/:/rs=w:800,h:800/:/rs=w:360,h:10" alt="Boxville Ad" style="max-width: 100%; height: auto;">
+  </div>
+
+  <!-- Image Button - Link to Purchase in Your Store -->
+  <div class="can-container">
+    <p class="promotional-text">Click the Blue Can to buy Boxville for PS4!</p>
+    <span class="arrow"></span> <!-- Arrow above the text -->
+    <a href="https://limitedlegacygames.com/games/ols/products/coming-very-soon-playstation-4-5" target="_blank">
+      <img src="https://img1.wsimg.com/isteam/ip/93004714-b337-4d50-9741-936ac4910de8/Front%20Can.png/:/rs=w:150,h:200" alt="Shop Now" style="border: none;" class="shine-image">
+    </a>
+  </div>
+</body>
+</html>
